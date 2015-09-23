@@ -2,9 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Antagosoft</title>
+    <link rel="stylesheet" href="src/css/main.css">
 </head>
 <body>
 
+    <div class="main-wrapper">
+        <header class="head flex">
+            <div class="__logo"><img class="img-responsive" src="www/img/logo.png" alt="logo"></div>
+            <div class="__description">
+                <div class="__title">Вероника Ростова</div>
+                <div class="__vacancy">Менеджер по продажам</div>
+                <div class="__slogan">Подберу для вас самые лучшие предложения. Мои услуги абсолютно бесплатны</div>
+            </div>
+        </header>
+        <section class="rating">
+            <div class="__wrapper">
+                <div class="__title">Услуги</div>
+                <ul class="__rating-wrapper">
+                    <li class="flex __bar">
+                        <div class="__wrapper __salad">Ручное бронирование</div>
+                        <div class="__count">11</div>
+                    </li>
+                    <li class="flex __bar">
+                        <div class="__wrapper __blue __blue-1">Пакетные туры</div>
+                        <div class="__count">3</div>
+                    </li>
+                    <li class="flex __bar">
+                        <div class="__wrapper __blue __blue-2">Отели</div>
+                        <div class="__count">1</div>
+                    </li>
+                </ul>
+                <div class="__summ">
+                    <div class="__bar">
+                        <div class="__wrapper">Всего</div>
+                        <div class="__count">15</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="comments">
+            <div class="__header">
+                <div class="__last-comments">Последние отзывы</div>
+                <div class="__all-comments"><a href="#">Все отзывы</a></div>
+                <div class="__social-wrap">
+                    <div class="__likes"><img src="www/img/heart.jpg" alt="likes" class="img-responsive">131</div>
+                    <div class="__comments"><img src="www/img/chat.jpg" alt="chat" class="ing-responsive">14</div>
+                </div>
+            </div>
+            <div class="__comment">
+                <div class="__name">Самуил</div>
+                <div class="__date">13 октября 2011</div>
+                <div class="__comment-body">Привет, Верунь! ниче себе ты такая крутая, фотка класс!!!</div>
+            </div>
+            <div class="__comment">
+                <div class="__name">Лилия Семеновна</div>
+                <div class="__date">14 октября 2011</div>
+                <div class="__comment-body">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами?</div>
+            </div>
+            <div class="__comment">
+                <div class="__name">Лилия Семеновна</div>
+                <div class="__date">13 октября 2011</div>
+                <div class="__comment-body">Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</div>
+            </div>
+        </section>
+        <section class="write-comment">
+            <form method="get" id="userForm">
+                <input type="text" name="text" class="__comment-input">
+                <button class="__comment-button" >Написать консультанту</button>
+            </form>
+        </section>
+    </div>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js"></script>
+<script src="src/js/app.js"></script>
 </body>
 </html>

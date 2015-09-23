@@ -1,0 +1,207 @@
+@import "reset";
+@import "colors";
+
+
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style-type: none;
+  }
+}
+
+
+.img-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.main-wrapper{
+  max-width: 720px;
+  .head{
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    .__logo{
+      border-radius: 50%;
+      overflow: hidden;
+      z-index: 1;
+    }
+    .__description{
+      align-self: flex-start;
+      div{
+        margin-bottom: 5px;
+      }
+
+      .__title{
+        font-weight: bold;
+      }
+      .__vacancy{
+        font-size: 12px;
+        color: @vacancy;
+      }
+      .__slogan{
+        font-size: 14px;
+        width: 100%;
+        background: @slogan-bg;
+        border: 1px solid @gray;
+        border-radius: @border-radius;
+        padding: 7px 0;
+        position: relative;
+        margin-left: -30px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  section{
+    padding: 0 20px;
+  }
+
+  .rating{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    .__wrapper{
+      flex: 0 0 70%;
+
+      .__title{
+        text-align: right;
+        border-bottom: 1px solid @gray;
+        padding-right: 30px;
+        font-size: 12px;
+      }
+      .__rating-wrapper{
+        padding: 20px 0 ;
+      }
+      .__bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 45px;
+        margin-bottom: 2px;
+        line-height: 2;
+        .__wrapper, .__count{
+          font-size: 12px;
+        }
+        .__wrapper{
+          border-radius: 0 @border-radius @border-radius 0;
+          white-space: nowrap;
+        }
+        .__salad{
+          background: @salad;
+        }
+        .__blue{
+          background: @blue;
+        }
+        .__blue-1{
+          flex: 0 0 45px;
+        }
+        .__blue-2{
+          flex: 0 0 30px;
+        }
+
+
+      }
+    }
+    .__summ{
+      border-top: 1px solid @gray;
+      .__bar{
+        .__wrapper, .__count{
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .comments{
+    .__header{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 20px;
+      .__last-comments{
+        font-weight: bold;
+        margin-right: 10px;
+      }
+      .__all-comments{
+        flex: 1;
+        a{
+          color: #1a3c58;
+          text-decoration: underline;
+        }
+      }
+      .__social-wrap{
+        display: flex;
+        flex-direction: row;
+        .__likes, .__comments{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          img{
+            margin:0 5px;
+          }
+        }
+      }
+    }
+    .__comment{
+      margin-bottom: 20px;
+      .__name{
+        float: left;
+        padding-right: 10px;
+        font-weight: bold;
+      }
+
+      .__comment-body{
+        padding: 15px 20px;
+        background: #f3faff;
+        border: 1px solid #ddd;
+        position: relative;
+        margin-top: 15px;
+        &:before{
+          content: '';
+          position: absolute;
+          left: 19px;
+          bottom: 100%;
+          border: 5px solid transparent;
+          border-bottom: 5px solid #ddd;
+          border-left: 5px solid #ddd;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          left: 20px;
+          bottom: 100%;
+          border: 4px solid transparent;
+          border-bottom: 4px solid #f3faff;
+          border-left: 4px solid #f3faff;
+        }
+      }
+    }
+  }
+  .write-comment{
+    background: @write-comment;
+    text-align: center;
+
+    .__comment-input{
+      width: 100%;
+      min-height: 65px;
+      margin: 25px 0 35px 0;
+      border: 1px solid @input-border ;
+      text-align: center;
+    }
+    .__comment-button{
+      background: @comment-button;
+      border: none;
+      border-radius: 50px;
+      padding: 15px 50px;
+      margin-bottom: 35px;
+      font-weight: bold;
+    }
+  }
+}
+
+
